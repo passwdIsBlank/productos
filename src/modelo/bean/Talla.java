@@ -5,6 +5,11 @@ public class Talla {
 	private int id;
 	private String nombre;
 	
+	public Talla(int id, String nombre) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+	}
 	public int getId() {
 		return id;
 	}

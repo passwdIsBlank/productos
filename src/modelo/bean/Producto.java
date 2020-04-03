@@ -1,19 +1,31 @@
 package modelo.bean;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Producto {
 	
 	private int id;
 	private String nombre;
 	private int stock;
-	private Date fecha_compra;
+	private LocalDate fecha_compra;
 	private String color;
 	private String made_in; //Name del estado
 	private Double precio;
 	private int descuento;
 	private String tallas; //tallas separados por coma ej.: S,L
 	
+	public Producto(String nombre, int stock, LocalDate fecha_compra, String color, String made_in, Double precio,
+			int descuento, String tallas) {
+		super();
+		this.nombre = nombre;
+		this.stock = stock;
+		this.fecha_compra = fecha_compra;
+		this.color = color;
+		this.made_in = made_in;
+		this.precio = precio;
+		this.descuento = descuento;
+		this.tallas = tallas;
+	}
 	public int getId() {
 		return id;
 	}
@@ -32,10 +44,10 @@ public class Producto {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-	public Date getFecha_compra() {
+	public LocalDate getFecha_compra() {
 		return fecha_compra;
 	}
-	public void setFecha_compra(Date fecha_compra) {
+	public void setFecha_compra(LocalDate fecha_compra) {
 		this.fecha_compra = fecha_compra;
 	}
 	public String getColor() {

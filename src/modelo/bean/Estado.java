@@ -6,6 +6,14 @@ public class Estado {
 	private String name;
 	private String continent;
 	
+	
+	public Estado(String name, int id, String continent) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.continent = continent;
+	}
+	
 	public int getId() {
 		return id;
 	}
